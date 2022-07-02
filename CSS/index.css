@@ -77,3 +77,49 @@ header p {
     font-size: 1.2em;
     max-width: 40em;
 }
+
+/* MAIN */
+/* MAIN */
+/* MAIN */
+
+.first_main_section{
+    color: white;
+    background-color: #5298FF;
+    padding: 5em 7em;
+    /* GRID */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "g1 g2"
+    "g3 g4";
+    grid-gap: 0px 1em;
+}
+main img{
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+}
+
+.first_main_section div{
+    padding: 3em 2em;
+}
+.first_main_section h2{
+    font-size: 2.4em;
+    margin-top: -0.5em;
+    padding-bottom: 0.7em;
+}
+
+
+.grid_purposes_1{
+    grid-area: g1;
+}
+.grid_purposes_2{
+    grid-area: g2;
+}
+.grid_purposes_3{
+    grid-area: g3;
+}
+.grid_purposes_4{
+    grid-area: g4;
+}
