@@ -78,9 +78,9 @@ header p {
     max-width: 40em;
 }
 
-/* MAIN */
-/* MAIN */
-/* MAIN */
+/* MAIN SECTION UNO*/
+/* MAIN SECTION UNO*/
+/* MAIN SECTION UNO*/
 
 .first_main_section{
     color: white;
@@ -122,4 +122,116 @@ header p {
 }
 .grid_purposes_4{
     grid-area: g4;
+}
+
+/* MAIN SECTION DOS */
+/* MAIN SECTION DOS */
+/* MAIN SECTION DOS */
+
+.second_main_section{
+    padding: 5em 7em;
+    text-align: center;
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.second_main_section h2{
+    margin-bottom: 1.5em;
+}
+.second_main_section .first_p{
+    width: 65%;
+}
+
+.div_in_section{
+    width: 90%;
+    margin-top: 1.5em;
+    height: 14em;
+    /* GRID */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+.div_in_section div{
+    border-radius: 20px;
+    padding: 2em;
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+}
+.div_in_section div:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgb(128, 128, 128);
+}
+.div_in_section p{
+    color: white;
+    font-size: 2em;
+}
+.red_square{
+background-color: #DC3525;
+}
+.red_square .icon{
+    position: relative;
+    bottom: 1.5em;
+    left: 1em;
+}
+.red_square .plus_icon{
+    position: relative;
+    left: 12em;
+    bottom: 7em;
+}
+.yellow_square{
+background-color: #DD9C07;
+}
+.yellow_square .icon1{
+    position: relative;
+    bottom: 1.5em;
+    left: 1em;
+}
+.yellow_square .plus_icon{
+    position: relative;
+    left: 12em;
+    bottom: 7em;
+}
+.green_square{
+background-color: #28A745;
+}
+.green_square .icon1{
+    position: relative;
+    bottom: 1.5em;
+    left: 1em;
+}
+.green_square .plus_icon{
+    position: relative;
+    left: 12em;
+    bottom: 7em;
+}
+.blue_square{
+    text-align: left;
+    background-color: #17A2B8;
+}
+.blue_square .icon1{
+    position: relative;
+    left: 1.5em;
+    top: 1em;
+}
+.blue_square .plus_icon{
+    position: relative;
+    left: 12em;
+    bottom: 4.2em;
+}
+.blue_square p{
+    position: relative;
+    top: 0.7em;
+}
+.icon{
+    width: 3em;   
+}
+.icon1{
+    width: 5em;
+}
+.plus_icon{
+    width: 1.5em;
 }
