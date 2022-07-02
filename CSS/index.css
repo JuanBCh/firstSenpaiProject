@@ -95,7 +95,7 @@ header p {
     "g3 g4";
     grid-gap: 0px 1em;
 }
-main img{
+.first_main_section img{
     width: 100%;
     height: 15em;
     object-fit: cover;
