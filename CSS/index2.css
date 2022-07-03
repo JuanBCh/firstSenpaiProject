@@ -27,6 +27,7 @@ button:hover {
 
 input {
     padding-left: 7.5px;
+    width: 100%;
     height: 1.9em;
     border: 1px solid gray;
     border-radius: 5px;
@@ -254,17 +255,19 @@ article {
 
 .last_seciton aside {
     text-align: center;
-    padding: 0px 10px 10px;
+    padding: 0px 10px;
     /* GRID */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30% 25% 25% 20%;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
     grid-template-areas:
         "g11 g11"
         "g12 g14"
         "g13 g14"
         "g15 g15";
     grid-gap: 0px 10px;
+    justify-items: center;
+    align-items: flex-end;
 }
 
 .last_seciton aside h3 {
@@ -274,41 +277,85 @@ article {
 
 .last_seciton aside .grid_purposes_5 {
     grid-area: g12;
-    text-align: left;
-    /* FLEX */
-    display: flex;
-    flex-direction: column;
 }
 
 .last_seciton aside .grid_purposes_6 {
     grid-area: g13;
-    text-align: left;
-    /* FLEX   */
-    display: flex;
-    flex-direction: column;
 }
 
 .last_seciton aside .grid_purposes_7 {
     grid-area: g14;
-    text-align: left;
-    /* FLEX  */
-    display: flex;
-    flex-direction: column;
 }
 
 .grid_purposes_7 input {
     height: 100%;
+    width: 100%;
     /* GRID */
     display: grid;
     grid-template-rows: 9fr 1fr;
     grid-template-areas: "g19 g20";
 }
 
+.grid_purposes_5, .grid_purposes_6, .grid_purposes_7{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+/* FLEX   */
+    display: flex;
+    flex-direction: column;
+}
+
 .last_seciton aside button {
     grid-area: g15;
     width: 8em;
     height: 2em;
-    position: absolute;
+    display: block;
+    /* position: absolute;
     left: calc(50% - 4em);
-    top: 10px;
+    top: 10px; */
+}
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+.dark_div{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: #5227CC;
+    height:0.5em;
+}
+/* 
+footer hr{
+    border-top: solid white;
+    background-color: rgba(255, 255, 255, 0);
+} */
+footer{
+    background-color: #4853d4;
+}
+.flex_section{
+    height: 8em;
+    padding: 2em 7em;
+    /* FELX */
+    display: flex;
+}
+.flex_section img{
+    height: 2em;
+    margin-right: 4em;
+}
+.flex_section div{
+    /* FELX */
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_section a{
+    color: white;
+    text-decoration: none;
+}
+.flex_section a:hover{
+    color: #3a1b8f;
+}
+.last_div{
+    margin-top: 0.3em;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
