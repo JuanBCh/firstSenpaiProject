@@ -214,6 +214,7 @@ header p {
 .red_square, .yellow_square, .green_square, .blue_square{
         padding: 10% 0px 5% 10%;
         text-align: left;
+        border-radius: 15px;
     /* GRID */
         display: grid;
         grid-template-rows: 20% 1fr 20% 1fr;
@@ -249,19 +250,21 @@ article {
 
 .last_seciton img {
     width: 100%;
-    height: 25vh;
+    height: 27.5vh;
     object-fit: cover;
 }
 
 .last_seciton aside {
     text-align: center;
     padding: 0px 10px;
+    height: 27.5vh;
     /* GRID */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1.3fr 0.7fr 1fr 1fr 1fr;
     grid-template-areas:
         "g11 g11"
+        ". ."
         "g12 g14"
         "g13 g14"
         "g15 g15";
@@ -321,7 +324,7 @@ article {
 
 .dark_div{
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    background-color: #5227CC;
+    background-color: #582f8b;
     height:0.5em;
 }
 /* 
@@ -330,7 +333,7 @@ footer hr{
     background-color: rgba(255, 255, 255, 0);
 } */
 footer{
-    background-color: #4853d4;
+    background-color: #6023ab;
 }
 .flex_section{
     height: 8em;
@@ -358,4 +361,6 @@ footer{
 .last_div{
     margin-top: 0.3em;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color: #25105f;
 }
