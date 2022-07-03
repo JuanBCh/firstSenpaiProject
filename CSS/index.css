@@ -23,7 +23,12 @@ button:hover{
     cursor: pointer;
     box-shadow: 1px 1px 3px rgb(128, 128, 128);
 }
-
+input{
+    padding-left: 7.5px;
+    height: 1.9em;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
 /* NAV */
 /* NAV */
 /* NAV */
@@ -234,4 +239,81 @@ background-color: #28A745;
 }
 .plus_icon{
     width: 1.5em;
+}
+
+/* ARTICLE */
+/* ARTICLE */
+/* ARTICLE */
+
+article{
+    color: white;
+    background-color: #5298FF;
+    padding: 5em 7em;
+}
+
+/* SECTION */
+/* SECTION */
+/* SECTION */
+
+.last_seciton{
+    padding: 5em 7em 7.5em;
+    background-color: rgb(250, 250, 250);
+    /* FLEX */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.last_seciton img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+.last_seciton aside{
+    text-align: center;
+    padding: 0px 10px 10px;
+    /* GRID */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 25% 25% 20%;
+    grid-template-areas: 
+    "g11 g11"
+    "g12 g14"
+    "g13 g14"
+    "g15 g15";
+    grid-gap: 0px 10px;
+}
+.last_seciton aside h3{
+    grid-area: g11;
+    font-size: 2.5em;
+}
+.last_seciton aside .grid_purposes_5{
+    grid-area: g12;
+    text-align: left;
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+}
+.last_seciton aside .grid_purposes_6{
+    grid-area: g13;  
+    text-align: left;
+    /* FLEX   */
+    display: flex;
+    flex-direction: column;
+}
+.last_seciton aside .grid_purposes_7{
+    grid-area: g14;   
+    text-align: left;
+    /* FLEX  */
+    display: flex;
+    flex-direction: column;
+}
+.grid_purposes_7 input{
+    height: 100%;
+}
+.last_seciton aside button{
+    grid-area: g15;    
+    width: 8em;
+    height: 2em;
+    position: relative;
+    left: calc(50% - 4em);
+    top: 10px;
 }
