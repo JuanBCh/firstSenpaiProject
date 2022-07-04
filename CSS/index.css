@@ -26,10 +26,11 @@ button:hover {
 }
 
 input {
+    font-family: 'DM Sans';
     padding-left: 7.5px;
     width: 100%;
     height: 1.9em;
-    border: 1px solid gray;
+    border: 1px solid rgb(173, 173, 173);
     border-radius: 5px;
 }
 
@@ -72,6 +73,7 @@ header {
     height: 57vh;
     background-image: url(../Materiales/manos.jpg);
     background-size: cover;
+    background-position: center;
     color: white;
     text-shadow: 1px 1px 1px black;
     text-align: center;
@@ -181,17 +183,10 @@ header p {
 
 .icon {
     grid-area: g16;
-    
-    /* position: relative;
-    bottom: 1.5em;
-    left: 1em; */
 }
 
 .plus_icon {
     grid-area: g17;
-    /* position: relative;
-    left: 12em;
-    bottom: 7em; */
 }
 .div_in_section p {
     color: white;
@@ -233,8 +228,121 @@ header p {
 article {
     color: white;
     background-color: #5298FF;
-    padding: 5em 7em;
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+article h2{
+    font-size: 2.6em;
+    margin-top: 1.6em;
+}
+article a{
+    color: white;
+    margin-bottom: 2em;
+}
+.slidehow{
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+.slide{
+ width: 20%;   
+ transition: 2s;
+ display: flex;
+ margin: 10px;
+}
+.slide .element{
+    width: 24%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* MANUAL NAVIGATION */
+.manual_navigation{
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+.manual_btn{
+    background-color: rgba(178, 178, 178, 0.893);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual_btn:hover{
+    padding: 12px;
+    margin: 8px;
+    background-color: #25105f;
+    transition: 1s;
+}
+#radio_1:checked ~ .first{
+    margin-left: 0px;
+}
+#radio_2:checked ~ .first{
+    margin-left: -20.2%;
+}
+#radio_3:checked ~ .first{
+    margin-left: -40.7%;
+}
+
+.slides .element {
+    color: black;
+    width: vw;
+    height: 50vh;
+    background-color: white;
+    margin: 3px;
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+}
+.element img{
+    width: 100%;
+    height: 45%;
+}
+.element .notice{
+   padding: 20px 10px; 
+   overflow: hidden;
+   /* GRID */
+   display: grid;
+   grid-template-rows: 10% 20% 1fr 10%;
+   grid-template-columns: 2fr 1fr;
+   grid-template-areas: 
+   "g20 g21"
+   "g22 g22"
+   "g23 g23"
+   ". g24";
+}
+.notice .date{
+    grid-area: g20;
+    display: flex;
+}
+.notice .time{
+    grid-area: g21;
+    display: flex;
+}
+.notice h4{
+    grid-area: g22;
+}
+.notice p{
+    grid-area: g23;
+}
+.notcie a{
+    grid-area: g24;
+    display: flex;
+}
+
 
 /* SECTION */
 /* SECTION */
@@ -290,13 +398,13 @@ article {
     grid-area: g14;
 }
 
-.grid_purposes_7 input {
+.grid_purposes_7 textarea {
+    font-family: 'DM Sans';
     height: 100%;
     width: 100%;
-    /* GRID */
-    display: grid;
-    grid-template-rows: 9fr 1fr;
-    grid-template-areas: "g19 g20";
+    padding:  7.5px;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 5px;
 }
 
 .grid_purposes_5, .grid_purposes_6, .grid_purposes_7{
@@ -313,9 +421,6 @@ article {
     width: 8em;
     height: 2em;
     display: block;
-    /* position: absolute;
-    left: calc(50% - 4em);
-    top: 10px; */
 }
 
 /* FOOTER */
@@ -340,8 +445,9 @@ footer{
     padding: 2em 7em;
     /* FELX */
     display: flex;
+    justify-content: space-between;
 }
-.flex_section img{
+.flex_section .logo_nexus{
     height: 2em;
     margin-right: 4em;
 }
@@ -358,9 +464,28 @@ footer{
 .flex_section a:hover{
     color: #3a1b8f;
 }
+.media{
+    color: white;
+    margin-left: auto;
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.media div{
+    flex-direction: row !important;
+}
+.media img{
+    width: 30px;
+}
 .last_div{
+    font-size: 13px;
+    height: 2rem;
     margin-top: 0.3em;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     text-align: center;
     color: #25105f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
