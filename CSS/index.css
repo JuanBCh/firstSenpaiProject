@@ -233,8 +233,106 @@ header p {
 article {
     color: white;
     background-color: #5298FF;
-    padding: 5em 7em;
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.slidehow{
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+.slide{
+ width: 20%;   
+ transition: 2s;
+ display: flex;
+ margin: 10px;
+}
+.slide .element{
+    width: 24%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* MANUAL NAVIGATION */
+.manual_navigation{
+    display: flex;
+    justify-content: center;
+}
+.manual_btn{
+    background-color: rgba(178, 178, 178, 0.893);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+#radio_1:checked ~ .first{
+    margin-left: 0px;
+}
+#radio_2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio_3:checked ~ .first{
+    margin-left: -40%;
+}
+
+.slides .element {
+    color: black;
+    width: vw;
+    height: 50vh;
+    background-color: white;
+    margin: 3px;
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+}
+.element img{
+    width: 100%;
+    height: 45%;
+}
+.element .notice{
+   padding: 20px 10px; 
+   overflow: hidden;
+   /* GRID */
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 10% 20% 1fr 10%;
+   grid-template-areas: 
+   "g20 . g21"
+   "g22 g22 g22"
+   "g23 g23 g23"
+   ". . g24";
+}
+.notice .date{
+    grid-area: g20;
+    display: flex;
+}
+.notice .time{
+    grid-area: g21;
+    display: flex;
+}
+.notice h4{
+    grid-area: g22;
+}
+.notice p{
+    grid-area: g23;
+}
+.notcie a{
+    grid-area: g24;
+    display: flex;
+}
+
 
 /* SECTION */
 /* SECTION */
