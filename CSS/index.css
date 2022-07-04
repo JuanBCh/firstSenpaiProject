@@ -26,10 +26,11 @@ button:hover {
 }
 
 input {
+    font-family: 'DM Sans';
     padding-left: 7.5px;
     width: 100%;
     height: 1.9em;
-    border: 1px solid gray;
+    border: 1px solid rgb(173, 173, 173);
     border-radius: 5px;
 }
 
@@ -72,6 +73,7 @@ header {
     height: 57vh;
     background-image: url(../Materiales/manos.jpg);
     background-size: cover;
+    background-position: center;
     color: white;
     text-shadow: 1px 1px 1px black;
     text-align: center;
@@ -396,13 +398,13 @@ article a{
     grid-area: g14;
 }
 
-.grid_purposes_7 input {
+.grid_purposes_7 textarea {
+    font-family: 'DM Sans';
     height: 100%;
     width: 100%;
-    /* GRID */
-    display: grid;
-    grid-template-rows: 9fr 1fr;
-    grid-template-areas: "g19 g20";
+    padding:  7.5px;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 5px;
 }
 
 .grid_purposes_5, .grid_purposes_6, .grid_purposes_7{
@@ -419,9 +421,6 @@ article a{
     width: 8em;
     height: 2em;
     display: block;
-    /* position: absolute;
-    left: calc(50% - 4em);
-    top: 10px; */
 }
 
 /* FOOTER */
@@ -446,8 +445,9 @@ footer{
     padding: 2em 7em;
     /* FELX */
     display: flex;
+    justify-content: space-between;
 }
-.flex_section img{
+.flex_section .logo_nexus{
     height: 2em;
     margin-right: 4em;
 }
@@ -463,6 +463,20 @@ footer{
 }
 .flex_section a:hover{
     color: #3a1b8f;
+}
+.media{
+    color: white;
+    margin-left: auto;
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.media div{
+    flex-direction: row !important;
+}
+.media img{
+    width: 30px;
 }
 .last_div{
     font-size: 13px;
