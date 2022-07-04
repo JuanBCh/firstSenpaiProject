@@ -17,9 +17,9 @@
     <nav>
         <img src="../Materiales/logo.png" alt="Logo de Nexos">
         <div>
-            <a href="#">Nosotros</a>
-            <a href="#">Noticias</a>
-            <a href="#">Ayuda</a>
+            <a href="#main">Nosotros</a>
+            <a href="#article">Noticias</a>
+            <a href="#section">Ayuda</a>
         </div>
         <button>INGRESAR</button>
     </nav>
@@ -29,80 +29,364 @@
             sociedad.</p>
         <p>Descubrí diferentes maneras de involucrar tu organización con la sociedad.</p>
     </header>
-    <main>
-        <section>
-            <img src="../Materiales/oficina.png" alt="Foto en la oficina">
-            <div>
+    <main id="main">
+        <section class="first_main_section">
+            <img src="../Materiales/oficina.png" alt="Foto en la oficina" class="grid_purposes_1">
+            <div class="grid_purposes_2">
                 <h2>Soluciones para empresas</h2>
                 <p>Generamos un medio para que las empresas se involucren en actividades de responsabilidad social.</p>
                 <p>¡Creá un grupo de voluntarios en tu organización y se parte del cambio!</p>
             </div>
-            <div>
+            <div class="grid_purposes_3">
                 <h2>Soluciones para organizaciones</h2>
                 <p>Apoyamos a las organizaciones sociales para que alcancen sus objetivos. Ponemos a su disposición una
                     comunidad de voluntarios dispuestos a apoyrarlas en sus necesidades.</p>
                 <p>Equipos de voluntarios por empresas dispuestos a potenciar tu impacto en la sociedad.</p>
             </div>
-            <img src="../Materiales/voluntariado.jpg" alt="Foto de voluntarios">
+            <img src="../Materiales/voluntariado.jpg" alt="Foto de voluntarios" class="grid_purposes_4">
         </section>
-        <section>
+        <section class="second_main_section">
             <h2>Encuentra las mejores oportunidades</h2>
-            <p>La plataforma cuenta con gran variedad de proyectos locales (sociales, educativos y medioambientales),
+            <p class="first_p">La plataforma cuenta con gran variedad de proyectos locales (sociales, educativos y
+                medioambientales),
                 donde encontraras el que mejor se adapte a la experiencia que estas buscando.</p>
-            <p>Te ayudamos en la coordinación con la organización de forma simple y rápida.</p>
-            <div>
-                <div>
-                    <img src="../Materiales/icono-mano.png" alt="Icono de mano">
-                    <img src="../Materiales/icono-mas.png" alt="Icono de mas">
+            <p class="first_p">Te ayudamos en la coordinación con la organización de forma simple y rápida.</p>
+            <div class="div_in_section">
+                <div class="red_square">
+                    <img src="../Materiales/icono-mano.png" alt="Icono de mano" class="icon">
+                    <img src="../Materiales/icono-mas.png" alt="Icono de mas" class="plus_icon">
                     <p>Ser voluntario</p>
                 </div>
-                <div>
-                    <img src="../Materiales/icono-mano-corazon.png" alt="Icono de mano con corazon">
-                    <img src="../Materiales/icono-mas.png" alt="Icono de mas">
+                <div class="yellow_square">
+                    <img src="../Materiales/icono-mano-corazon.png" alt="Icono de mano con corazon" class="icon">
+                    <img src="../Materiales/icono-mas.png" alt="Icono de mas" class="plus_icon">
                     <p>Donar</p>
                 </div>
-                <div>
-                    <img src="../Materiales/icono-reciclar.png" alt="Icono de reciclaje">
-                    <img src="../Materiales/icono-mas.png" alt="Icono de mas">
+                <div class="green_square">
+                    <img src="../Materiales/icono-reciclar.png" alt="Icono de reciclaje" class="icon">
+                    <img src="../Materiales/icono-mas.png" alt="Icono de mas" class="plus_icon">
                     <p>Reciclar</p>
                 </div>
-                <div>
-                    <img src="../Materiales/icono-maletin.png" alt="Icono de maletin">
-                    <img src="../Materiales/icono-mas.png" alt="Icono de mas">
+                <div class="blue_square">
+                    <img src="../Materiales/icono-maletin.png" alt="Icono de maletin" class="icon">
+                    <img src="../Materiales/icono-mas.png" alt="Icono de mas" class="plus_icon">
                     <p>Llamados laborales</p>
                 </div>
             </div>
         </section>
     </main>
-    <article>
+    <article id="article">
         <h2>Noticias</h2>
-        <a href="#">ver todas</a>
-        <!-- Aqui iria un carrusel con diferentes noticias -->
+        <a href="https://www.reddit.com/r/uruguay" target="_blank">ver todas</a>
+        <!-- EMPIEZA CARRUZEL -->
+        <div class="slidehow">
+            <div class="slides">
+                <!-- RADIO BTNS -->
+                <input type="radio" name="radio_btn" id="radio_1">
+                <input type="radio" name="radio_btn" id="radio_2">
+                <input type="radio" name="radio_btn" id="radio_3">
+                <!-- RADIO BTNS -->
+                <!-- ELEMENTOS DEL SLIDE -->
+                <div class="slide first">
+                    <div class="element">
+                        <img src="#" alt="">
+                        <div class="notice">
+                            <div class="date">
+                                <img src="../Materiales/icono-calendario.png" alt="Icono de calendario">
+                                <p id="notice_date">fecha</p>
+                            </div>
+                            <div class="time">
+                                <img src="../Materiales/icono-reloj.png" alt="Icono de reloj">
+                                <p id="time_passed_notice">xmin</p>
+                            </div>
+                            <h4>TITULO</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A velit, maxime voluptatem
+                                consectetur aliquid quos error sit architecto consequuntur fuga ratione dolorum modi
+                                dolore eos et nisi asperiores consequatur molestiae.
+                            </p>
+                            <a href="#">
+                                <img src="../Materiales/icono-flecha.png" alt="Icono de flecha">
+                                <p>ver mas</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="#" alt="">
+                        <div class="notice">
+                            <div class="date">
+                                <img src="../Materiales/icono-calendario.png" alt="Icono de calendario">
+                                <p id="notice_date"></p>
+                            </div>
+                            <div class="time">
+                                <img src="../Materiales/icono-reloj.png" alt="Icono de reloj">
+                                <p id="time_passed_notice"></p>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                            <a href="#">
+                                <img src="../Materiales/icono-flecha.png" alt="Icono de flecha">
+                                <p>ver mas</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="#" alt="">
+                        <div class="notice">
+                            <div class="date">
+                                <img src="../Materiales/icono-calendario.png" alt="Icono de calendario">
+                                <p id="notice_date"></p>
+                            </div>
+                            <div class="time">
+                                <img src="../Materiales/icono-reloj.png" alt="Icono de reloj">
+                                <p id="time_passed_notice"></p>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                            <a href="#">
+                                <img src="../Materiales/icono-flecha.png" alt="Icono de flecha">
+                                <p>ver mas</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="#" alt="">
+                        <div class="notice">
+                            <div class="date">
+                                <img src="../Materiales/icono-calendario.png" alt="Icono de calendario">
+                                <p id="notice_date"></p>
+                            </div>
+                            <div class="time">
+                                <img src="../Materiales/icono-reloj.png" alt="Icono de reloj">
+                                <p id="time_passed_notice"></p>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                            <a href="#">
+                                <img src="../Materiales/icono-flecha.png" alt="Icono de flecha">
+                                <p>ver mas</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="element">
+                        <img src="#" alt="">
+                        <div class="notice">
+                            <div class="date">
+                                <img src="../Materiales/icono-calendario.png" alt="Icono de calendario">
+                                <p id="notice_date"></p>
+                            </div>
+                            <div class="time">
+                                <img src="../Materiales/icono-reloj.png" alt="Icono de reloj">
+                                <p id="time_passed_notice"></p>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                            <a href="#">
+                                <img src="../Materiales/icono-flecha.png" alt="Icono de flecha">
+                                <p>ver mas</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="#" alt="">
+                        <div class="notice">
+                            <div class="date">
+                                <img src="../Materiales/icono-calendario.png" alt="Icono de calendario">
+                                <p id="notice_date"></p>
+                            </div>
+                            <div class="time">
+                                <img src="../Materiales/icono-reloj.png" alt="Icono de reloj">
+                                <p id="time_passed_notice"></p>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                            <a href="#">
+                                <img src="../Materiales/icono-flecha.png" alt="Icono de flecha">
+                                <p>ver mas</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="#" alt="">
+                        <div class="notice">
+                            <div class="date">
+                                <img src="../Materiales/icono-calendario.png" alt="Icono de calendario">
+                                <p id="notice_date"></p>
+                            </div>
+                            <div class="time">
+                                <img src="../Materiales/icono-reloj.png" alt="Icono de reloj">
+                                <p id="time_passed_notice"></p>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                            <a href="#">
+                                <img src="../Materiales/icono-flecha.png" alt="Icono de flecha">
+                                <p>ver mas</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="#" alt="">
+                        <div class="notice">
+                            <div class="date">
+                                <img src="../Materiales/icono-calendario.png" alt="Icono de calendario">
+                                <p id="notice_date"></p>
+                            </div>
+                            <div class="time">
+                                <img src="../Materiales/icono-reloj.png" alt="Icono de reloj">
+                                <p id="time_passed_notice"></p>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                            <a href="#">
+                                <img src="../Materiales/icono-flecha.png" alt="Icono de flecha">
+                                <p>ver mas</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="element">
+                        <img src="#" alt="">
+                        <div class="notice">
+                            <div class="date">
+                                <img src="../Materiales/icono-calendario.png" alt="Icono de calendario">
+                                <p id="notice_date"></p>
+                            </div>
+                            <div class="time">
+                                <img src="../Materiales/icono-reloj.png" alt="Icono de reloj">
+                                <p id="time_passed_notice"></p>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                            <a href="#">
+                                <img src="../Materiales/icono-flecha.png" alt="Icono de flecha">
+                                <p>ver mas</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="#" alt="">
+                        <div class="notice">
+                            <div class="date">
+                                <img src="../Materiales/icono-calendario.png" alt="Icono de calendario">
+                                <p id="notice_date"></p>
+                            </div>
+                            <div class="time">
+                                <img src="../Materiales/icono-reloj.png" alt="Icono de reloj">
+                                <p id="time_passed_notice"></p>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                            <a href="#">
+                                <img src="../Materiales/icono-flecha.png" alt="Icono de flecha">
+                                <p>ver mas</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="#" alt="">
+                        <div class="notice">
+                            <div class="date">
+                                <img src="../Materiales/icono-calendario.png" alt="Icono de calendario">
+                                <p id="notice_date"></p>
+                            </div>
+                            <div class="time">
+                                <img src="../Materiales/icono-reloj.png" alt="Icono de reloj">
+                                <p id="time_passed_notice"></p>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                            <a href="#">
+                                <img src="../Materiales/icono-flecha.png" alt="Icono de flecha">
+                                <p>ver mas</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="#" alt="">
+                        <div class="notice">
+                            <div class="date">
+                                <img src="../Materiales/icono-calendario.png" alt="Icono de calendario">
+                                <p id="notice_date"></p>
+                            </div>
+                            <div class="time">
+                                <img src="../Materiales/icono-reloj.png" alt="Icono de reloj">
+                                <p id="time_passed_notice"></p>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                            <a href="#">
+                                <img src="../Materiales/icono-flecha.png" alt="Icono de flecha">
+                                <p>ver mas</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ELEMENTOS DEL SLIDE -->
+            </div>
+            <!-- MANUAL -->
+            <div class="manual_navigation">
+                <label for="radio_1" class="manual_btn"></label>
+                <label for="radio_2" class="manual_btn"></label>
+                <label for="radio_3" class="manual_btn"></label>
+            </div>
+            <!-- MANUAL -->
+        </div>
+        <!-- TERMINA CARRUZEL -->
     </article>
-    <section>
+    <section id="section" class="last_seciton">
+
         <img src="../Materiales/laptop-escritorio.jpg" alt="Laptop en escritorio">
         <aside>
             <h3>Contacto</h3>
-            <label for="">Tu nombre</label>
-            <input type="text">
-            <label for="">Tu e-mail</label>
-            <input type="email">
-            <label for="">Mensaje</label>
-            <input type="text">
+            <div class="grid_purposes_5">
+                <label for="">Tu nombre</label>
+                <input type="text" placeholder="Nombre">
+            </div>
+            <div class="grid_purposes_6">
+                <label for="">Tu e-mail</label>
+                <input type="email" placeholder="E-Mail">
+            </div>
+            <div class="grid_purposes_7">
+                <label for="textarea">Mensaje</label>
+                <textarea type="text" placeholder="Mensaje" id="textarea" maxlength="255"></textarea>
+            </div>
             <button>ENVIAR</button>
         </aside>
+
     </section>
     <footer>
-        <img src="../Materiales/logo-blanco.png" alt="Logo de Nexos">
+        <div class="dark_div"></div>
         <div>
-            <a href="#">Nosotros</a>
-            <a href="#">Noticias</a>
-            <a href="#">Contacto</a>
-            <a href="#">Terminos y condiciones</a>
-        </div>
-        <div>
-            <!-- Aqui irian las redes sociales -->
-        </div>
+            <section class="flex_section">
+                <img src="../Materiales/logo-blanco.png" alt="Logo de Nexos" class="logo_nexus">
+                <div>
+                    <a href="#main">Nosotros</a>
+                    <a href="#article">Noticias</a>
+                    <a href="#section">Contacto</a>
+                    <a href="#">Terminos y condiciones</a>
+                </div>
+                <div class="media">
+                    <p>Seguinos!</p>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="../Materiales/facebook-icon.png" alt="icono de facebook">
+                        </a>
+                        <a href="https://twitter.com/?lang=es" target="_blank">
+                            <img src="../Materiales/twitter-icon.png" alt="icono de twitter">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="../Materiales/instagram-icon.png" alt="icono  de instagram">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="last_div">
+                <p>Copyright 2021 All rights reserved</p>
+            </div>
     </footer>
 </body>
 <script src="../JS/index.js"></script>
