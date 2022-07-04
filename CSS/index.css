@@ -181,17 +181,10 @@ header p {
 
 .icon {
     grid-area: g16;
-    
-    /* position: relative;
-    bottom: 1.5em;
-    left: 1em; */
 }
 
 .plus_icon {
     grid-area: g17;
-    /* position: relative;
-    left: 12em;
-    bottom: 7em; */
 }
 .div_in_section p {
     color: white;
@@ -239,6 +232,14 @@ article {
     justify-content: center;
     align-items: center;
 }
+article h2{
+    font-size: 2.6em;
+    margin-top: 1.6em;
+}
+article a{
+    color: white;
+    margin-bottom: 2em;
+}
 .slidehow{
     width: 80%;
     height: 100%;
@@ -266,6 +267,7 @@ article {
 }
 /* MANUAL NAVIGATION */
 .manual_navigation{
+    margin-bottom: 2em;
     display: flex;
     justify-content: center;
 }
@@ -277,14 +279,20 @@ article {
     cursor: pointer;
     transition: 1s;
 }
+.manual_btn:hover{
+    padding: 12px;
+    margin: 8px;
+    background-color: #25105f;
+    transition: 1s;
+}
 #radio_1:checked ~ .first{
     margin-left: 0px;
 }
 #radio_2:checked ~ .first{
-    margin-left: -20%;
+    margin-left: -20.2%;
 }
 #radio_3:checked ~ .first{
-    margin-left: -40%;
+    margin-left: -40.7%;
 }
 
 .slides .element {
@@ -306,13 +314,13 @@ article {
    overflow: hidden;
    /* GRID */
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 10% 20% 1fr 10%;
+   grid-template-columns: 2fr 1fr;
    grid-template-areas: 
-   "g20 . g21"
-   "g22 g22 g22"
-   "g23 g23 g23"
-   ". . g24";
+   "g20 g21"
+   "g22 g22"
+   "g23 g23"
+   ". g24";
 }
 .notice .date{
     grid-area: g20;
@@ -457,8 +465,13 @@ footer{
     color: #3a1b8f;
 }
 .last_div{
+    font-size: 13px;
+    height: 2rem;
     margin-top: 0.3em;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     text-align: center;
     color: #25105f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
