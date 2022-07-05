@@ -262,11 +262,6 @@ article a{
  display: flex;
  margin: 10px;
 }
-.slide .element{
-    width: 24%;
-    height: 100%;
-    border-radius: 10px;
-}
 /* MANUAL NAVIGATION */
 .manual_navigation{
     margin-bottom: 2em;
@@ -298,8 +293,10 @@ article a{
 }
 
 .slides .element {
+    width: 24%;
+    height: 100%;
+    border-radius: 10px;
     color: black;
-    width: vw;
     height: 50vh;
     background-color: white;
     margin: 3px;
@@ -312,17 +309,26 @@ article a{
     height: 45%;
 }
 .element .notice{
-   padding: 20px 10px; 
-   overflow: hidden;
+    height: 55%;
+   padding: 20px 10px;
    /* GRID */
    display: grid;
-   grid-template-rows: 10% 20% 1fr 10%;
-   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 10% 20% 60% 10%;
+   grid-template-columns: 2fr 20%;
    grid-template-areas: 
    "g20 g21"
    "g22 g22"
    "g23 g23"
-   ". g24";
+   "g24 g24";
+}
+.notice div{
+    display: flex;
+    align-items: center;
+}
+.notice img{
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
 }
 .notice .date{
     grid-area: g20;
@@ -336,11 +342,17 @@ article a{
     grid-area: g22;
 }
 .notice p{
+    font-size: 10px;
     grid-area: g23;
+    color: black;
 }
-.notcie a{
+.ver_mas{
     grid-area: g24;
     display: flex;
+}
+.ver_mas a{
+    color: black;
+    margin-bottom: 0;
 }
 
 
@@ -473,6 +485,7 @@ footer{
     align-items: center;
 }
 .media div{
+    margin-top: 0.5em;
     flex-direction: row !important;
 }
 .media img{
