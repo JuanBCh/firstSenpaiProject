@@ -346,7 +346,7 @@ article a{
 }
 .notice p{
     margin-top: 10px;
-    font-size: 10px;
+    font-size: 12px;
     grid-area: g23;
     color: gray;
 }
