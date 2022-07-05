@@ -39,7 +39,6 @@ input {
 /* NAV */
 
 nav {
-    /* background-color: gray; */
     height: 4em;
     padding: 1em 7em;
     /* FLEX */
@@ -507,4 +506,36 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 391px){
+    /* NAV */
+    /* NAV */
+    /* NAV */
+
+    nav {
+        height: auto;
+        /* width: 100%; */
+        padding: 1em;
+        /* FLEX */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav button{
+        height: 2em;
+        margin-bottom: 1em;
+    }
+    nav img {
+        margin-top: 1em;
+    }
+    nav div {
+        top: 0em;
+        right: 0em;
+        margin: 2em;
+    }
+    
+    nav a {
+        font-size: 1em;
+        padding: 0px 15px;
+    }
 }
