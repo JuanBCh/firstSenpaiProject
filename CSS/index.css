@@ -653,5 +653,38 @@ header h1 {
 #radio_3:checked ~ .first{
     margin-left: 0px;
 }
+/* SECTION */
+/* SECTION */
+/* SECTION */
 
+.last_seciton {
+    padding: 5em 1em 2.5em;
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+}
+
+.last_seciton img {
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+.last_seciton aside {
+    height: auto;
+    /* GRID */
+    grid-template-rows: 1.3fr 0.7fr 1fr 1fr 2fr 1fr;
+    grid-template-areas:
+        "g11 g11"
+        ". ."
+        "g12 g12"
+        "g13 g13"
+        "g14 g14"
+        "g15 g15";
+    grid-gap: 1em;
+}
+
+.last_seciton aside button {
+    width: 10em;
+    height: 3em;
+}
 }
