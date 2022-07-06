@@ -448,11 +448,6 @@ article a{
     background-color: #582f8b;
     height:0.5em;
 }
-/* 
-footer hr{
-    border-top: solid white;
-    background-color: rgba(255, 255, 255, 0);
-} */
 footer{
     background-color: #6023ab;
 }
@@ -686,5 +681,31 @@ header h1 {
 .last_seciton aside button {
     width: 10em;
     height: 3em;
+}
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+.flex_section{
+    height: auto;
+    padding: 2em 1em;
+    /* FELX */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex_section .logo_nexus{
+    height: 2em;
+    margin: 0px 1em;
+}
+.flex_section div{
+    text-align: center;
+    margin: 0em 1em;
+}
+.flex_section .us{
+    margin: 2em;
+}
+.last_div{
+    font-size: 10px;
 }
 }
