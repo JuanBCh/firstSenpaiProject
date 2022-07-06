@@ -90,7 +90,6 @@ header h1 {
 
 header p {
     font-size: 1.2em;
-    max-width: 40em;
 }
 
 /* MAIN SECTION UNO*/
@@ -515,7 +514,9 @@ footer{
         justify-content: center;
     }
     nav button{
+        font-size: 1.2em;
         height: 2em;
+        /* width: 15em; */
         margin-bottom: 1em;
     }
     nav img {
