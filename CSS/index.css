@@ -257,7 +257,7 @@ article a{
  width: 20%;   
  transition: 2s;
  display: flex;
- margin: 10px;
+ margin: 10px 0px;
 }
 /* MANUAL NAVIGATION */
 .manual_navigation{
@@ -283,10 +283,10 @@ article a{
     margin-left: 0px;
 }
 #radio_2:checked ~ .first{
-    margin-left: -20.2%;
+    margin-left: -20%;
 }
 #radio_3:checked ~ .first{
-    margin-left: -40.7%;
+    margin-left: -40%;
 }
 
 .slides .element {
@@ -436,6 +436,8 @@ article a{
     width: 8em;
     height: 2em;
     display: block;
+    position: relative;
+    top: 5px;
 }
 
 /* FOOTER */
@@ -624,7 +626,9 @@ header h1 {
 /* ARTICLE */
 /* ARTICLE */
 /* ARTICLE */
-
+.slide{
+    margin: 10px;
+}
 .slides{
     width: 2000%;
     display: flex;
