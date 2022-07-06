@@ -330,6 +330,7 @@ article a{
     height: 20px;
 }
 .notice .date{
+    font-size: 5px;
     grid-area: g20;
     display: flex;
 }
