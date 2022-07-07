@@ -376,7 +376,7 @@ article a{
     grid-template-rows: 1.3fr 0.7fr 1fr 1fr 1fr;
     grid-template-areas:
         "g11 g11"
-        ". ."
+        ". ng"
         "g12 g14"
         "g13 g14"
         "g15 g15";
@@ -410,6 +410,24 @@ article a{
     padding:  7.5px;
     border: 1px solid rgb(173, 173, 173);
     border-radius: 5px;
+}
+.grid_purposes_8{
+    width: 100%;
+    text-align: right;
+    grid-area: ng;
+    color: rgb(149, 149, 149);
+    font-size: 10px;
+    position: relative;
+    top: 700%;
+    right: 12.5px;
+}
+.blank{
+    color: white;
+    transition: 0.1s;
+}
+.full{
+    color: red;
+    transition: 0.2s;
 }
 .grid_purposes_5, .grid_purposes_6, .grid_purposes_7{
     text-align: left;
@@ -648,7 +666,7 @@ footer{
     grid-template-rows: 1.3fr 0.7fr 1fr 1fr 2fr 1fr;
     grid-template-areas:
         "g11 g11"
-        ". ."
+        ". ng"
         "g12 g12"
         "g13 g13"
         "g14 g14"

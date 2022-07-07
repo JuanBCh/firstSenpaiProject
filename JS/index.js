@@ -30,7 +30,8 @@ myOrganizationBtn.addEventListener("click", choseOrganization);
 let nameInput = document.getElementById("name_input");
 let mailInput = document.getElementById("mail_input");
 let msjTextArea = document.getElementById("textarea");
-let formBtn = document.getElementById("form_btn");
+let textLenght = document.getElementById("text_lenght");
+let textDiv = document.getElementById("text_div");
 
 function useRegexForName(nameInput) {
   let regex = /[^a-zA-Z]+/i;
@@ -47,17 +48,27 @@ const onlyTextAlert = () => {
 };
 
 function useRegexForMail(mailInput) {
-  let regex = /@\./i;
+  let regex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/i;
   return regex.test(mailInput);
 }
 const validateMail = () => {
-  if (useRegexForName(mailInput.value) == false) {
+  if (useRegexForMail(mailInput.value) == false && mailInput.value.length > 0) {
     mailInput.classList.add("wrong_name");
     setTimeout(mailAlert, 100);
   } else mailInput.classList.remove("wrong_name");
+  if (mailInput.value.length == 0) mailInput.classList.remove("wrong_name");
 };
 const mailAlert = () => alert(`El e-mail debe ser válido.`);
+
+const showMsjLenght = () => {
+  if (msjTextArea.value.length > 0) textDiv.classList.remove("blank");
+  else textDiv.classList.add("blank");
+  textLenght.innerText = msjTextArea.value.length;
+  if (msjTextArea.value.length == 255) textDiv.classList.add("full");
+  else textDiv.classList.remove("full");
+};
 
 nameInput.addEventListener("keydown", () => setTimeout(ValidateOnlyText, 1));
 nameInput.addEventListener("blur", () => setTimeout(onlyTextAlert, 1));
 mailInput.addEventListener("blur", () => setTimeout(validateMail, 1));
+msjTextArea.addEventListener("keydown", () => setTimeout(showMsjLenght, 1));
