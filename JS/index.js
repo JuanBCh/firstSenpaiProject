@@ -4,24 +4,36 @@ let modalContainer = document.querySelectorAll(".modal_container")[0];
 let myCompanyBtn = document.getElementById("my_company");
 let myOrganizationBtn = document.getElementById("my_organization");
 
+function populateStorage() {
+  localStorage.setItem("sesionClass", openModal.classList);
+  localStorage.setItem("sesionText", openModal.innerHTML);
+  setStyles();
+}
+function setStyles() {
+  openModal.classList = localStorage.getItem("sesionClass");
+  openModal.innerHTML = localStorage.getItem("sesionText");
+}
+
 const letsToggleModal = () => {
   modalContainer.classList.toggle("modal_close");
 };
 const disableButton = () => {
-  openModal.disabled = true;
   openModal.classList.add("button_changed");
 };
 const choseCompany = () => {
   openModal.innerHTML = "Hola Compania!";
   letsToggleModal();
   disableButton();
+  setTimeout(populateStorage(), 100);
 };
 const choseOrganization = () => {
   openModal.innerHTML = "Hola Organización!";
   letsToggleModal();
   disableButton();
+  setTimeout(populateStorage(), 100);
 };
 
+document.body.onload = setStyles;
 openModal.addEventListener("click", letsToggleModal);
 closeModal.addEventListener("click", letsToggleModal);
 myCompanyBtn.addEventListener("click", choseCompany);

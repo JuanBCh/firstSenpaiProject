@@ -70,7 +70,6 @@ nav button{
 }
 .button_changed:hover{
     box-shadow: none;
-    cursor: default;
 }
 
 /* HEADER */
