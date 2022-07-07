@@ -21,7 +21,7 @@ const disableButton = () => {
   openModal.classList.add("button_changed");
 };
 const choseCompany = () => {
-  openModal.innerHTML = "Hola Compania!";
+  openModal.innerHTML = "Hola Empresa!";
   letsToggleModal();
   disableButton();
   setTimeout(populateStorage(), 100);

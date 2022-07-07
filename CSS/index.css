@@ -524,9 +524,11 @@ footer{
     }
     nav button{
         font-size: 1.2em;
-        height: 2em;
         margin-left: 0px;
         margin-bottom: 1em;
+    }
+    .button_changed{
+        margin: -10px 0px -10px 0px;
     }
     nav img {
         margin-top: 1em;
