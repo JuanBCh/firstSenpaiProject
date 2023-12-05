@@ -10,8 +10,10 @@ function populateStorage() {
   setStyles();
 }
 function setStyles() {
-  openModal.classList = localStorage.getItem("sesionClass");
-  openModal.innerHTML = localStorage.getItem("sesionText");
+  if (localStorage.getItem("sesionText")) {
+    openModal.classList = localStorage.getItem("sesionClass");
+    openModal.innerHTML = localStorage.getItem("sesionText");
+  }
 }
 
 const letsToggleModal = () => {
